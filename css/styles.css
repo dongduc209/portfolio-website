@@ -1,20 +1,18 @@
 :root {
-  --background-color: #EDF1D6;
-  --primary-color: #9DC08B;
+  --background-color: #edf1d6;
+  --primary-color: #9dc08b;
   --secondary-color: #357b70;
-  --primary-text-color: darkblue ;
-  --secondary-text-color: #40513B;
-  --light-color: white ;
+  --primary-text-color: darkblue;
+  --secondary-text-color: #40513b;
+  --light-color: white;
   --dark-color: rgba(0, 0, 0, 0.3);
   --primary-sun-color: #edc655;
   --secondary-sun-color: #fcffad;
   --tertiary-sun-color: #f76414;
-
 }
 
-
 .web-id {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 * {
@@ -22,16 +20,16 @@
 }
 
 body {
-    background-color: var(--background-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400 ;
-    font-size: 16px ;
-    line-height: 1.6 ;
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1 {
-    font-size: 28px;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .page-header {
@@ -82,28 +80,21 @@ h1 {
   clear: both;
 }
 
-
-
-
-
 .page-footer {
   flex-direction: column;
   text-align: center;
 }
-
 
 .body-profile {
   max-width: 1080px;
   margin: 0 auto;
 }
 
-
 .work {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
 
 .grid__item {
   display: inline-block;
@@ -118,17 +109,17 @@ h1 {
     margin: 0;
   }
 
-.grid__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
-}
+  .grid__item :last-child {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+  }
 
-.grid__item {
-  background-color: var(--primary-color);
-  width: auto;
-  min-height: auto;
-  margin: 0;
-}
+  .grid__item {
+    background-color: var(--primary-color);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -136,26 +127,32 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
 
 /* styles About Page */
-.button, button {
+
+.button,
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -180,24 +177,29 @@ button:focus,
 a {
   color: var(--primary-text-color);
   transition: all 0.1s linear;
-  }
-  a:hover, a:focus {
-  color: #40513B;
-  }
+}
+
+a:hover,
+a:focus {
+  color: #40513b;
+}
 
 .about-me {
   max-width: 1080px;
   margin: 0 auto;
   text-align: center;
+  list-style-type: none;
 }
 
 @keyframes color-change {
   0% {
     fill: var(--primary-sun-color);
   }
+
   50% {
     fill: var(--secondary-sun-color);
   }
+
   100% {
     fill: var(--tertiary-sun-color);
   }
@@ -211,6 +213,7 @@ a {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -228,6 +231,7 @@ a {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
