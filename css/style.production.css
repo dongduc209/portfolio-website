@@ -58,7 +58,8 @@ h1 {
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  font-weight: bold;
+  text-decoration-style: none;
 }
 
 .profile {
